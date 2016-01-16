@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 version = '1.0'
 
 setup(
-	name='Lucy',
+	name='lucy',
 	version=version,
 	description='Lucy generates a LICENSE file for your project from the command line for you.',
 	author='Chinmaya Kr. Patanaik',
