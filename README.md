@@ -34,19 +34,6 @@ $ python setup.py install
 
 ## Usage
 
-### Generate a new license.
-
-
-```bash
-$ lucy create <License Name> --name=<Author Name>             
-```
-
-### 
-
-```bash
-$ lucy create mit --name=Chinmaya                     # Creates a MIT license for your project.
-```
-
 ### List all available licenses
 
 ```bash
@@ -54,11 +41,17 @@ $ lucy list
 ```
 
 Output:
-
 > 
 [
   'gpl-3.0', 'lgpl-2.1', 'mit', 'isc', 'bsd-3-clause', 'mpl-2.0', 'lgpl-3.0', 'agpl-3.0', 'gpl-2.0', 'epl-1.0', 'apache-2.0', 'artistic-2.0', 'cc0-1.0', 'bsd-2-clause', 'unlicense'
 ]
+
+### Generate a new license.
+
+```bash
+$ lucy create <License Name> --name=<Author Name>             
+$ lucy create mit --name=Chinmaya                     # Creates a MIT license for your project.
+```
 
 ## Contributing
 
