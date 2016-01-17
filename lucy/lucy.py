@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 import re
 import sys
 from datetime import datetime
@@ -14,12 +15,22 @@ HEADERS = {
 	"Accept" : "application/vnd.github.drax-preview+json",
 }
 
+DIR_PATH = os.path.abspath(os.path.dirname(__file__))
+PARENT_DIR = os.path.abspath(os.path.join(DIR_PATH, os.pardir))
+FILEPATH = os.path.abspath(os.path.join(PARENT_DIR, 'LICENSE'))
+
 def build_license_content(content, name):
 	"""Creates the license by replacing year and name in the original text."""
 	year = datetime.now().year
 	content = re.sub('\[year\]', str(year), content)
 	content = re.sub('\[fullname\]', name, content)
 	return content
+
+def create_license_file(license_content):
+	"""Creates a file named LICENSE in the current directory with license content."""
+	license_file = FILEPATH
+	with open(license_file, 'w') as f:
+		f.write(license_content)
 
 @click.group()
 def main():
@@ -47,7 +58,7 @@ def create(license_name, name):
 	if response.status_code == requests.codes.ok:
 		content = response.json()['body']
 		license_content = build_license_content(content, name)
-		click.echo(license_content)
+		create_license_file(license_content)
 	else:
 		click.echo("Please check the license name you provided.")
 	
