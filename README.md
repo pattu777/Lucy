@@ -9,12 +9,12 @@ A CLI tool to generate `license` file for your project.
 > - Written in simple Python
 > - Easy to [install](https://github.com/pattu777/Lucy#installation)
 > - [Easy to use](https://github.com/pattu777/Lucy#usage)
-> - Uses Github API to search and create your [`license`](https://github.com/karan/joe#list-all-available-files) file.
+> - Uses Github v3 API to create your [`license`](https://github.com/karan/joe#list-all-available-files) file.
 
 ## Python libraries used
 
-- [Click](http://click.pocoo.org/5/) 				                                 # For parsing command line arguements.
-- [requests](http://docs.python-requests.org/en/latest/user/quickstart/)		 # For making Github API calls.
+- [Click](http://click.pocoo.org/5/) 				                                 
+- [requests](http://docs.python-requests.org/en/latest/user/quickstart/)		
 
 ## Installation
 
@@ -27,7 +27,7 @@ $ pip install lucy
 ### Option 2: From source
 
 ```bash
-$ git clone --recursive git@github.com:pattu777/lucy.git
+$ git clone --recursive git@github.com:pattu777/Lucy.git
 $ cd Lucy/
 $ python setup.py install
 ```
