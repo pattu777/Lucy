@@ -1,4 +1,4 @@
-![](http://s3.favim.com/orig/40/caroo-cat-cats-computer-cute-Favim.com-337157.jpg)
+![](https://knowledgeme.s3.amazonaws.com/uploads/collection/background_image/43/cover_step3.jpg)
 
 # Lucy
 
