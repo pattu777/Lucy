@@ -1,4 +1,4 @@
-![]()
+![](http://s3.favim.com/orig/40/caroo-cat-cats-computer-cute-Favim.com-337157.jpg)
 
 # Lucy
 
