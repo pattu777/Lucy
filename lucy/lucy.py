@@ -6,8 +6,10 @@ from datetime import datetime
 
 import click
 import requests
+from requests.compat import urljoin
 
-API_URL = 'https://api.github.com/licenses'
+BASE_LIST_URL = 'https://api.github.com/licenses'
+BASE_SEARCH_URL = 'https://api.github.com/licenses/'
 HEADERS = {
 	"Accept" : "application/vnd.github.drax-preview+json",
 }
@@ -27,7 +29,7 @@ def main():
 @main.command()
 def list():
 	"""Lists all available licenses."""
-	call_url = API_URL
+	call_url = BASE_LIST_URL
 	response = requests.get(call_url, headers=HEADERS)
 	if response.status_code == requests.codes.ok:
 		license_list = [x['key'] for x in response.json()]
@@ -40,7 +42,7 @@ def list():
 @click.option('--name', prompt="Author's name please")
 def create(license_name, name):
 	"""Fetches the content of the requested license."""
-	call_url = API_URL + '/' + license_name
+	call_url = urljoin(BASE_SEARCH_URL, license_name)
 	response = requests.get(call_url, headers=HEADERS)
 	if response.status_code == requests.codes.ok:
 		content = response.json()['body']
