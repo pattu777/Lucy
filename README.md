@@ -71,5 +71,5 @@ $ virtualenv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ git checkout -b <feature-branch-name>
-$ python lucy/lucy.py mit
+$ python lucy/lucy.py list
 ```
