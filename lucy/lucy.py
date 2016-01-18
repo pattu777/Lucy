@@ -44,8 +44,7 @@ def list():
     response = requests.get(call_url, headers=HEADERS)
     if response.status_code == requests.codes.ok:
         license_list = [str(x['key']) for x in response.json()]
-        click.echo("List of all license key names:")
-        click.echo(license_list)
+        click.echo('\n'.join(license_list))
     else:
         click.echo("Service not working at the moment.")
 
