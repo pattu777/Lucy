@@ -15,9 +15,7 @@ HEADERS = {
     "Accept" : "application/vnd.github.drax-preview+json",
 }
 
-DIR_PATH = os.path.abspath(os.path.dirname(__file__))
-PARENT_DIR = os.path.abspath(os.path.join(DIR_PATH, os.pardir))
-FILEPATH = os.path.abspath(os.path.join(PARENT_DIR, 'LICENSE'))
+FILEPATH = os.path.abspath(os.path.join(os.getcwd(), 'LICENSE'))
 
 def build_license_content(content, name):
     """Creates the license by replacing year and name in the original text."""
