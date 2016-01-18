@@ -47,8 +47,8 @@ def list():
         click.echo("Service not working at the moment.")
 
 @main.command()
-@click.argument('license_name')
 @click.option('--name', prompt="Author's name please")
+@click.argument('license_name')
 def create(license_name, name):
     """Fetches the content of the requested license."""
     call_url = urljoin(BASE_SEARCH_URL, license_name)
