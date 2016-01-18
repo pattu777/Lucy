@@ -4,6 +4,8 @@
 
 A CLI tool to generate `license` file for your project.
 
+![](http://i.imgur.com/ttyy7nk.gif?1)
+
 > **Features**
 
 > - Written in simple Python
