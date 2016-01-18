@@ -43,7 +43,8 @@ $ lucy list
 ```
 
 Output:
-> 
+
+```bash
 mit
 mpl-2.0
 gpl-3.0
@@ -59,6 +60,7 @@ artistic-2.0
 bsd-3-clause
 agpl-3.0
 epl-1.0
+```
 
 ### Generate a new license.
 
