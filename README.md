@@ -44,9 +44,21 @@ $ lucy list
 
 Output:
 > 
-[
-  'gpl-3.0', 'lgpl-2.1', 'mit', 'isc', 'bsd-3-clause', 'mpl-2.0', 'lgpl-3.0', 'agpl-3.0', 'gpl-2.0', 'epl-1.0', 'apache-2.0', 'artistic-2.0', 'cc0-1.0', 'bsd-2-clause', 'unlicense'
-]
+mit
+mpl-2.0
+gpl-3.0
+lgpl-3.0
+unlicense
+bsd-2-clause
+isc
+lgpl-2.1
+gpl-2.0
+apache-2.0
+cc0-1.0
+artistic-2.0
+bsd-3-clause
+agpl-3.0
+epl-1.0
 
 ### Generate a new license.
 
